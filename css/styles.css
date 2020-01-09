@@ -119,7 +119,7 @@ a:hover {
 
 .blog-post > img {
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
     display: block;
     margin: auto;
 }
@@ -135,6 +135,16 @@ a:hover {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 45px;
     padding: 50px;
+}
+
+.blog-post .pageLinks {
+  display: inline-block;
+  margin: 15px;
+}
+
+#linksContainer {
+  width: 100%;
+  text-align: center;
 }
 
 .sidebar {
