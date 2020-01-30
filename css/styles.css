@@ -175,3 +175,13 @@ a:hover {
 #sponsor-list img {
     width: 200px;
 }
+
+.videoRow {
+  display: flex;
+  justify-content: center
+}
+
+.videoRow > iframe {
+  display: inline-block;
+  margin: 20px;
+}
