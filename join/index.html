@@ -1,63 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Join Team 3405</title>
-    <link href="../css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Oswald:400,700"
-          rel="stylesheet">
-</head>
-<body>
-<div class="header">
-    <a href="../index.html">
-        <img src="../images/logo.png"/>
-        <h1>Team 3405</h1>
-    </a>
-</div>
-<div class="body">
-    <h2 class="title">Join Team 3405</h2>
-    <p id="summary">
-        Are you a high school student interested in learning to prototype, build, program, and control real-world robots?
-    </p>
-    <div id="button-list"></div>
-    <div class="two-column">
-        <div id="main-column">
-            <div class="blog-post-list">
-                <div class="blog-post">
-                    <h3>Interested in joining our team?</h3>
-                    <div class="content">
-                        To join our team you must be a high school student (9-12th grade) attending a school in Nebo School District. You
-                        <b>don't</b> have to be taking ALC classes to join! You don't have to have any prior experience with Programming, Engineering, Marketing, or other STEM-related fields to join!
-                    </div>
-                    <h2>To Join</h2>
-                    <div class="content">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEkjYBlxmBgwXI8w9yXWuDREUE2hnUvxDivPIbqCR2Tm1JyQ/viewform?embedded=true" width="640" height="1313" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                    </div>
-                    <br />
-                    <div class="content">
-                        Please use the form above to get on our mailing list so we can let you know when our next meeting is!
-                    </div>
-                    <!--<h3>Highlights:</h3>-->
-                    <!--<iframe width="560" height="315" src="this_years_highlights"-->
-                    <!--frameborder="0"-->
-                    <!--allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-                </div>
-            </div>
-        </div>
-        <div class="sidebar">
-            <h3>Information:</h3>
-            <ul>
-                <li>Website: <a href="https://team3405.info">https://team3405.info</a></li>
-                <li>Rookie Year: 2010</li>
-                <li>Regional Championships Won: 1</li>
-            </ul>
-        </div>
-    </div>
+	<!-- Header Information -->
+	<head>
+	<meta charset="UTF-8">
+	<title>ALC Robotics - Join</title>
+	<link href="../css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../images/global/favicon.ico">
+  <script src="https://kit.fontawesome.com/4c31a4ea6b.js" crossorigin="anonymous"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</head>
+	
+<!-- Website Body -->
+	<body>
+		
 
-</div>
-<div class="footer">
-    &copy; 2022 ALChemists (Team 3405).<br/>Website designed and built by <a href="https://github.com/Sub6Resources">Matthew
-    Whitaker</a><br />Website updated and maintained by <a href="https://github.com/sammer2605">Samuel Whitaker</a>
-</div>
-</body>
-</html>
+<!-- Navbar -->
+<script>
+  $(function () {
+    $("#navbar").load("/nav.html");
+  });
+</script>
+<nav id="navbar">
+</nav>
+
+<!-- Main -->
+<main id="main" class="flexbox-col">
+  <!-- Header -->
+  <!-- The header is used to showcase some of the many qualities FIRST students
+  discover, develop, or gain as they progress in the STEM fields. In these qualities,
+  we must always include the aims, vision, and mission of the ALC, Nebo School District, 
+  and FIRST. The ALC's montra of "Explore. Discover. Create." is easily seen as part of
+  this list. "Inspire", "Excel", "Lead", and "Innovate" have been taken from or 
+  inspired by the vision and mission of FIRST. Nebo's mission is to "Engage, Empower, 
+  Collaborate, and Prepare". The power of collaboration and engagement is showcased
+  firsthand in all the aspects and values of FIRST. -->
+  <div class="joinHeader">
+    <div class="left">Get ready to</div>
+    <div class="right">
+      <div id="wordCarousel">
+        <div>
+          <div class="carouselSlide">Learn</div>
+          <div class="carouselSlide">Inspire</div>
+          <div class="carouselSlide">Explore</div>
+          <div class="carouselSlide">Succeed</div>
+          <div class="carouselSlide">Collaborate</div>
+          <div class="carouselSlide">Discover</div>
+          <div class="carouselSlide">Excel</div>
+          <div class="carouselSlide">Create</div>
+          <div class="carouselSlide">Lead</div>
+          <div class="carouselSlide">Innovate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    let carousel = document.querySelector("#wordCarousel div");
+
+carousel.addEventListener("animationiteration", () => {
+  carousel.appendChild(carousel.children[0]);
+});
+  </script>
+  <div class="dividedContent
+  ">
+    <div>
+      <!-- Video Player -->
+      <div id="videoPlayer" data-title="FIRST Robotics Is...." data-id="Jd29kzjclV0">
+        <a title="Click to play video First Is...."> 
+        <img class="thumb" alt="FIRST Is... Video" src="../images/media/Team2024.jpg" />
+        <span class="play"></span>
+        </a>
+      </div>
+      <!-- JavaScript for Video Player -->
+      <script src="../javascript/videoPlayer.js"></script>
+    </div>
+    <div>
+      <div class="basicTxtBox">
+      <p style="font-size: 28px;"><b>Welcome to FIRST, a community of students, parents, and teachers specifically driven by a passion
+        for learning, scholarship opportunities, real-life career and business applications, and competitive sport!
+        As a FIRST student, you will experience first-hand the impact STEM (Science, Technology,
+        Engineering, and Math) has on our community, society, and world. Join the next generation
+        of leaders in the top global industries as they compete in an internationally-recognized 
+        and acclaimed Robotics Competition - this is FIRST, For Inspiration and Recognition of Science and Technology.
+      </b></p>
+    </div>
+    </div>
+  </div>
+  <div class="dividedContent moreSpace">
+    <div>
+      <img class="recruit-image" alt="ALC Robotics 2024" src="../images/media/GLaDOScomp.jpg">
+      <img src="/images/media/2024UtahComp/Driver1.jpg" alt="" width="100%">
+      <img src="/images/media/2024UtahComp/Pit1.jpg" alt="" width="100%">
+    </div>
+    <div>
+        <!-- Submission Form: Join the FIRST Community -->
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfAFkSbjVWsh2BLUl6RER4UGxQCex1vWLOs6i-wBz5UN5pfFQ/viewform?embedded=true" width="640" height="1550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </div>
+  <!-- Hook -->
+  <!-- This section aims to briefly explain all things ALC, Nebo, and FIRST while
+  also promoting their core values. -->
+
+  <!-- Recruiting Video -->
+
+  <!-- Opportunities (Competition, Soda Bus, Recruiting, etc.) -->
+
+  <!-- Alumni/Senior/Veteran Quotes to spice it up -->
+
+  <!-- Our Mission (& How it aligns with the missions of Nebo and the ALC) -->
+  <!-- FAQs -->
+
+    <!-- Position Descriptions (Pre-Competition) -->
+
+    <!-- Position Descriptions (At Competition) -->
+    <br />
+
+
+  <br />
+  <!-- Footer -->
+  <footer>
+    <!-- District Non-Discrimination Policy Notice -->
+    <!-- District Website -->
+    <!-- ALC Website -->
+    <!-- FIRST Website -->
+    <!-- FIRST Utah Regional Website -->
+  </footer>
+</main>
+
+	</body>
+  </html>
